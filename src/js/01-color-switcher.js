@@ -8,10 +8,10 @@ function getRandomHexColor() {
 }
 
 bntStart.addEventListener('click', () => {
-  timerId = setInterval(() => {
-    bntStart.disabled = true;
-    bntStop.disabled = false;
+  bntStart.disabled = true;
+  bntStop.disabled = false;
 
+  timerId = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 });
