@@ -73,6 +73,7 @@ const timer = {
 };
 
 btnStart.addEventListener('click', () => {
+  timer.stop();
   timer.start(ourTimer, timeOfDeadline);
 });
 
